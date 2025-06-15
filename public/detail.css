@@ -1,0 +1,249 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+
+}
+
+.container {
+  max-width: 600px !important;
+  margin: 0 auto;
+  padding: 40px 20px;
+  margin-bottom: 6dvh;
+  margin-top: 35px;
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Tombol kembali */
+.back-btn {
+  font-size: 30px;
+text-decoration: none;
+  position: absolute;
+  top: 150px;
+  left: 40px;
+  cursor: pointer;
+  color: #000000;
+  background-color: transparent;
+  border: none;
+}
+
+.back-btn:hover {
+  text-decoration: none;
+}
+
+/* Header Judul */
+.title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.badge {
+  background-color: #e0f7f4;
+  color: #2f8672;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  width: fit-content;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+/* Informasi baris-baris */
+.info-pair {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.info-pair strong {
+  color: #000;
+  width: 40%;
+}
+
+/* QR box */
+.qr-box {
+  background-color: #e0f7f4;
+  padding: 20px;
+  text-align: center;
+  margin: 30px 0;
+  border-radius: 8px;
+}
+
+.qr-box p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.qr-placeholder {
+  width: 180px;
+  height: 180px;
+  background-color: #ccc;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+/* Box lokasi alamat */
+.lokasi-box {
+  background-color: #ffffff;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  margin-top: 10px;
+  font-weight: 500;
+  text-align: right;
+}
+
+/* Tombol alamat */
+.btn-alamat {
+  margin-top: 12px;
+  background-color: white;
+  color: #2f8672;
+  border: 1px solid #2f8672;
+  padding: 8px 94px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-alamat:hover {
+  background-color: #2f8672;
+  color: white;
+}
+
+/* Responsive layout */
+@media (max-width: 500px) {
+  .info-pair {
+    flex-direction: column;
+  }
+
+  .info-pair strong {
+    width: 100%;
+    margin-bottom: 4px;
+  }
+}
+
+footer {
+  background-color: #102522;
+  color: #ffffff;
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.footer-left {
+  max-width: 250px;
+}
+
+.footer-left h2 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-left h2 img {
+  width: 20px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.footer-left p {
+  margin-top: 10px;
+  color: #c0c0c0;
+}
+
+.footer-column {
+  min-width: 150px;
+  margin: 10px 20px;
+}
+
+.footer-column h4 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #d0d0d0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #00e4be;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-left,
+  .footer-column {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footer-column ul {
+    padding-left: 0;
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.profile-icon .circle {
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: 2px solid #00e4be;
+  border-radius: 50%;
+}
+
+.logo-v {
+  background: linear-gradient(to right, #00e4be, #132dd5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+

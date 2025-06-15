@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body, html {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* GLOBAL CONTAINER */
+.container {
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+}
+
+
+.data-page {
+  flex-direction: column;
+  padding: 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.profile-icon .circle {
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: 2px solid #00e4be;
+  border-radius: 50%;
+}
+
+.intro-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eaf8f5;
+  padding: 60px 60px;
+}
+
+.intro-text {
+  max-width: 50%;
+}
+
+.intro-text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.intro-text p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.intro-text .btn-submit {
+  background-color: #00a478;
+  padding: 10px 20px;
+  color: white(5, 76, 2);
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.logo-v {
+  background: linear-gradient(to right, #00e4be, #132dd5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.intro-image img {
+  width: 280px;
+  border-radius: 10px;
+}
+
+.steps-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 70px;
+  background-color: white;
+}
+
+.step:last-child::after {
+    display: none;
+  }
+
+.step {
+  text-align: center;
+  max-width: 220px;
+}
+
+.step img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.step h4 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.step p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.data-form {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.data-form h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.data-section {
+  margin-bottom: 30px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.line {
+  height: 2px;
+  width: 100px;
+  background-color: #000;
+  margin: 30px auto 0 auto;
+}
+
+.data-section h3 {
+  font-size: 18px;
+  background-color: #e8f7f0;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  color: #2e7d64;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.form-question-group {
+  margin-bottom: 15px;
+}
+
+.form-question-group p {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.radio-group {
+  display: flex;
+  gap: 30px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.radio-custom {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  position: relative;
+}
+
+input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+}
+
+input[type="radio"]:checked + .radio-custom::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: #2e7d64;
+  border-radius: 50%;
+}
+
+.select-container {
+  position: relative;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  appearance: none;
+  background-color: white;
+}
+
+.select-container::after {
+  content: "▼";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #888;
+}
+
+.date-input {
+  position: relative;
+}
+
+.date-input input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.flag-img {
+  width: 24px;
+  height: auto;
+  margin-top: 4px;
+}
+
+.calendar-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.full-width-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.save-button-container {
+  display: flex;
+  justify-content: flex-end;
+  color: #00a478;
+}
+
+.btn-submit {
+    background-color: #16a34a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #15803d;
+}
+
+.save-button-container .btn-submit {
+  width: auto;
+  padding: 12px 30px;
+}
+
+/* Footer Style */
+footer {
+    background-color: #102522;
+    color: #ffffff;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+.footer-left {
+    max-width: 250px;
+}
+
+.footer-left h2 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-left h2 img {
+    width: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.footer-left p {
+    margin-top: 10px;
+    color: #c0c0c0;
+}
+
+.footer-column {
+    min-width: 150px;
+    margin: 10px 20px;
+}
+
+.footer-column h4 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #d0d0d0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #00e4be;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-left,
+    .footer-column {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer-column ul {
+        padding-left: 0;
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .container.registrasi-page {
+    flex-direction: column;
+  }
+
+  .left-section {
+    display: none;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

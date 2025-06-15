@@ -1,0 +1,224 @@
+.jadwal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 50px;
+}
+
+.jadwal-header h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.btn-submit {
+    background-color: #2f8672;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 kolom kalau cukup */
+  gap: 20px;
+  padding: 40px 60px;
+  box-sizing: border-box;
+}
+
+/* Kartu Vaksin */
+.card {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Badge Vaksin */
+.badge {
+  background-color: #e0f7f4;
+  color: #2f8672;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  width: fit-content;
+  margin-bottom: 12px;
+}
+
+/* Deskripsi Tanggal dan Rumah Sakit */
+.desc {
+  font-size: 30px;
+  margin: 6px 0;
+  font-weight: bold;
+}
+
+/* Alamat Box */
+.alamat {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 12px 0;
+}
+
+/* Tombol Detail Alamat (div) */
+.btn-detail-alamat {
+  background-color: #ffffff;
+  border: 1px solid #2f8570;
+  color: #2f8570;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-detail-alamat:hover {
+  background-color: #f0fffc;
+}
+
+/* Tombol Jadwal */
+.btn-detail {
+  padding: 10px;
+  background-color: #2f8570;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-detail:hover {
+  background-color: #256c5c;
+}
+
+
+footer {
+  background-color: #102522;
+  color: #ffffff;
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.footer-left {
+  max-width: 250px;
+}
+
+.footer-left h2 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-left h2 img {
+  width: 20px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.footer-left p {
+  margin-top: 10px;
+  color: #c0c0c0;
+}
+
+.footer-column {
+  min-width: 150px;
+  margin: 10px 20px;
+}
+
+.footer-column h4 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #d0d0d0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #00e4be;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-left,
+  .footer-column {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footer-column ul {
+    padding-left: 0;
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.profile-icon .circle {
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: 2px solid #00e4be;
+  border-radius: 50%;
+}
+
+.logo-v {
+  background: linear-gradient(to right, #00e4be, #132dd5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
